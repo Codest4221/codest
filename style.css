@@ -210,13 +210,14 @@ h3{
 	padding-right: 10px;
 }
 .campus-col img{
-	width: 100%;
+	width:227px ;
+	height: 253px;
 	display: block;
 }
 .layer{
 	background:transparent;
 	height: 100%;
-	width: 97%;
+	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -363,7 +364,7 @@ footer.footer .instagram div > img {
 	height: 50%;
 	margin: .2rem .4rem;
 }
-footer.footer .follow div i{
+footer.footer .follow div a{
 	color:white ;
 	padding:0 .4rem;
 }
