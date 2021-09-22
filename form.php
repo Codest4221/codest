@@ -1,27 +1,19 @@
 <?php
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $subject = $_POST['email'];
+    $mailFrom = $_POST['subject'];
+    $message = $_POST['message'];
 
-$email_from ='info@codest4221.github.io/';
+    $mailTo = "pinartalas@hotmail.com.tr";
+    $headers = "From: ".$mailFrom;
+    $txt = " You have received an e-mail from".$name.".\n\n".$message;
 
-$email_subject = 'New Form Submission';
 
-$email_body = 'User Name: $name.\n'.
-                'User Email: $visitor_email.\n'.
-                'Subject: $subject.\n'.
-                'User Message: $message.\n';
 
-$to = 'codest4221@gmail.com';
-
-$headers = "From: $email_from \r\n" ;
-
-$headers = "Reply-To: $visitor_email \r\n";
-
-mail($to, $email_subject, $email_body, $headers );
-
-header("Location: contact.html")
+    mail($mailTo, $subject, $txt, $header);
+    header("Location: https://codest4221.github.io/codest/contact.html");
+}
 
 ?>
 
