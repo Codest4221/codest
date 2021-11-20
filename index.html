@@ -13,19 +13,27 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+	
 	<section class="header">
+	
 		<nav>
 			<a href="index.html"><img src="images/logo-remove.png"></a>
 			<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()" ></i>
-				<ul>
+				<ul class="nav">
 					<li><a href="index.html">ANASAYFA</a></li>
 					<li><a href="about.html">HAKKIMIZDA</a></li>
-					<li><a href="product.html">ÜRÜNÜMÜZ</a></li>
+					<li><a href="">PROJELERİMİZ</a>
+					<ul class="sub-menu">
+						<li><a href="product.html">Reader</a></li>
+						<li><a href="augmentor.html">Augmentor</a></li>
+						<li><a href="asistan.html">Sesli Asistan</a></li>
+
+					</ul></li>
 					<li><a href="contact.html">İLETİŞİM</a></li>
-
+				
 			</ul>
-
+	
 			
 			</div>
 		
@@ -33,62 +41,128 @@
 		</nav>
 
 <div class="text-box">
-	<h1>Yaratıcılıktan yazılıma bir köprü</h1>
+	<h1>Yaratıcılıktan Geleceğe Bir Bakış...</h1>
 	<br>
-	<a href="" class="hero-btn">Şimdi Keşfetmeye Başla</a>
+	<p>“Biz dünyayı değiştirebiliriz.” sözünden yola çıkarak teknolojiye yön verme, <br>
+		 teknolojiyi geliştirme ve bunları herkes için kolay erişilebilir kılmak amacıyla yola çıkmıştır.</p>
+	<a href="#course" class="hero-btn">Şimdi Keşfetmeye Başla</a>
 </div>
 </section>
-<section class="testimonials">
-	<h1>Vizyonumuz</h1>
+
+
+</section>
+
+
+<section class="course " id="course">
+	<h1>Hakkımızda</h1>
+	<p>fotoğraf aracalığıya analizlerin değerlendirilmesini kolaylaştıran bir programın gerekliliği farkedilmiştir. Amacımız görüntü işleme ile kullanıcın elde ettiği analizleri değerlendirebildiği ve bu değerlendirmeleri sayısal veriler üzerinden kaydedebildiği bir program üretmektir.
+	</p>
+	<a href="about.html" class="btn-course">Daha Fazlası İçin</a>
 	
-		<div class="testimonial-col">
-			<img src="">
-			<div class="viz">
-				<p>‘Biz dünyayı değiştirebiliriz’ sözünden yola çıkarak Türkiyenin yazılım ve teknoloji dalında girişimci ekibi olmak istiyoruz.</p>
-				
-			</div>
+
+	<div class="photo">
+		<img src="images/circle.png">
+	</div>
+</section>
+
+
+<!---Blog Carousel---->
+<main>
+<section class="blog">
+	<div class="blog" id="blog">
 		
-	</div>
+		<div class="container">
+			<h1>
+				Proje ve Ürünlerimiz
+			</h1>
+			
+			<div class="owl-carousel owl-theme blog-post">
+				<div class="blog-content">
+					<img src="img/blog-1.jpg" alt="post-1">
+					<div class="blog-title">
+						<h4>
+							Sistem Nasıl İşler?
+						</h4>
+						<p>Sistem genel yapısıyla yazılım paketlerinden oluşmakta olup, bu paketler sırasıyla, Görüntü işleme, Veri işleme, Yapay zeka , Veri sunum ve görselleştirme yazılım paketlerinden oluşmaktadır. 
+						</p>
+						
 
-	
-</section>
+						<span></span>
+					</div>
+				</div>
 
-</section>
-<section class="testimonials">
-	<h1>Misyonumuz</h1>
-	
-		<div class="testimonial-col">
-			<img src="">
-			<div class="viz">
-				<p>Fikirlerimizle ve yeniliklerimizle ülkemizin geleceğine katkıda bulunmak ve bulduğumzudan daha iyi bir Türkiye bırakmak</p>
-				
+				<div class="blog-content">
+					<img src="img/blog-2.jpg" alt="post-1">
+					<div class="blog-title">
+						<h4>
+							Kullanım Alanları
+						</h4>
+						
+						<p> analizlerin fotoğraflanabildiği ve renk koyuluğunun fotoğraf üzerinde değişiklik gösterdiği tüm girdilerde kullanılabilir bir uygulama olucaktır. 
+
+						</p>
+						
+						<span></span>
+					</div>
+					
+				</div>
+
+				<div class="blog-content">
+					<img src="img/blog-3.jpg" alt="post-2">
+					<div class="blog-title">
+						<h4>
+						 Amaç Nedir
+						</h4>
+						<p> Amacımız görüntü işleme ile kullanıcın elde ettiği analizleri değerlendirebildiği ve bu değerlendirmeleri sayısal veriler üzerinden kaydedebildiği bir program üretmektir.
+
+
+						</p>
+						
+						<span></span>
+					</div>
+				</div>
+
+				<div class="blog-content">
+					<img src="img/blog-4.jpg" alt="post-4">
+					<div class="blog-title">
+						<h4>
+							Çalışma prensibi
+						   </h4>
+						   <p>  Veri kümelerinin kazandığı anlam doğrultusunda kullanıcın tercihine ve veri kümesinin uygunluğuna göre yapay zeka modellerinden tercih edilen beslenerek veriler içinde veya benzer veriler üzerinde sınıflandırma yapılabilcek.
+
+   
+   
+						   </p>
+						
+						<span></span>
+					</div>
+				</div>
+
+				<div class="blog-content">
+					<img src="img/blog-5.jpg" alt="post-1">
+					<div class="blog-title">
+						<h4>
+							Yerli gelişim yaptığımız analar nelerdir?
+						   </h4>
+						   <p> Bu noktada analiz yöntemlerinin algoritmalarını ve yazılımlarını yerli olarak geliştirmekte olup, yapay zeka modellerimizi kendi yerli fikirlerimizle güçlendirmekteyiz.
+
+   
+   
+						   </p>
+						
+						<span></span>
+					</div>
+				</div>
+				<div class="owl-navigation">
+					<span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+					<span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+				</div>
+
 			</div>
-		
-	</div>
-
-	
-</section>
-
-<section class="course ">
-	<h1>Proje ve Ürünümüz</h1>
-	
-
-	<div class="row owl-carousel owl-theme">
-		<div class="course-col item">
-			<h3>PROJE </h3>
-			<p>Yürütülen çalışmalarda yapılan testlerin ve analizlerin değerlendirilemesi çalışmanın sürdürülebilirliği ve doğruluğu için çok büyük bir önem taşımaktadır. Bu noktada analizlerin ve testlerin değerlendirilmesi insan yetileri kapsamında zor veya imkansız hale gelmektedir. Bu kısıttan ötürü fotoğraf aracalığıya analizlerin değerlendirilmesini kolaylaştıran bir programın gerekliliği farkedilmiştir. Amacımız görüntü işleme ile kullanıcın elde ettiği analizleri değerlendirebildiği ve bu değerlendirmeleri sayısal veriler üzerinden kaydedebildiği bir program üretmektir.</p>
 		</div>
-		<div class="course-col item">
-			<h3>ÜRÜN</h3>
-			<p>Yürütülmekte olan akademik ve bilimsel çalışmalarda analizlerin değerlendirilmesi çok büyük bir önem taşımaktadır. Bundan ötürü analizlerin görsel aracılığıyla incelenebildiği, sayısal verilere dönüştürüldüğü ve bu verilerin görselleştirildiği bir programın gerekliliği fark edilmiştir. Bu farkındalık ile tamamladığımız içindeki birçok yöntem ile görsellerin analizi sağlayan ‘READER’ ürünümüzü hizmetinize sunmaktan gurur duyuyor, size yardımcı olmasını diliyoruz.</p>
-		</div>
-		<div class="course-col item">
-			<h3>PROJE</h3>
-			<p>Yürütülmekte olan akademik ve bilimsel çalışmalarda analizlerin değerlendirilmesi çok büyük bir önem taşımaktadır. Bundan ötürü analizlerin görsel aracılığıyla incelenebildiği, sayısal verilere dönüştürüldüğü ve bu verilerin görselleştirildiği bir programın gerekliliği fark edilmiştir. Bu farkındalık sonucu ortaya çıkardığımız ürünümüz olan ‘READER’ projemize ek olarak getireceğimiz yapay zeka ile sınıflandırma özelliğimiz, daha esnek ve kullanışlı ara yüz ve yeni yöntemlerimiz ile ‘READER’ projemizi daha geniş bir kullanım alanı sunmayı planlıyoruz. ‘READER 2.0’ projemizi yakında hizmetinize sunmayı heyecanla bekliyoruz.</p>
-		</div>
-
 	</div>
 </section>
+
 
 
 <section class="campus">
@@ -96,6 +170,7 @@
 	
 
 	<div class="row">
+		
 		<div class="campus-col">
 			<img src="images/mete2.jpg">
 			<div class="layer">
@@ -114,7 +189,7 @@
 			<img src="images/pp.jpeg">
 			<div class="layer">
 				<h3>PINAR TALAŞ</h3>
-				<p>Pınar Talaş, Orta Doğu Teknik Üniversitesi Bilgisayar ve Öğrenim Teknolojileri 2. Sınıf öğrencisi. Talaş Web tasarım, web geliştirme alanlarında çalışmalar yapmaktadır.</p>
+				<p>Pınar Talaş, Orta Doğu Teknik Üniversitesi Bilgisayar ve Öğrenim Teknolojileri 2. Sınıf öğrencisi. Talaş Web tasarım, web geliştirme, mobil uygulama yapma ve C#  alanlarında çalışmalar yapmaktadır.</p>
 			</div>
 		</div>
 		<div class="campus-col">
@@ -130,14 +205,43 @@
 				<h3>BİLGE MUTLU</h3>
 				<p>Orta Doğu Teknik Üniversitesi Elektrik ve Elektronik Mühendisliği 2. Sınıf öğrencisi. ODTÜ Genç Girişimciler Topluluğunda 2 yıl, ODTÜ Robot Topluluğunda 2 yıl çalışan Mutlu finans ve pazarlama alanlarında çalışmalar yapmaktadır.</p>
 			</div>
+			</div>
 		</div>
+			<div class="row">
+		
 		<div class="campus-col">
-			<img src="images/eren foto.jpg">
+			<img src="images/eren.jpeg">
 			<div class="layer">
 				<h3>EREN KANDİN</h3>
 				<p>Orta Doğu Teknik Üniversitesi Bilgisayar ve Öğrenim Teknolojileri 2. Sınıf öğrencisi. ODTÜ Board of European Students of Technology topluluğunda 1 yıl, Institute of Engineers and Everyone Else Topluluğunda 1 yıl çalışan Ulucan web tasarım alanında çalışmalar yapmaktadır.</p>
 			</div>
 		</div>
+		<div class="campus-col">
+			<img src="images/elvin.jpg">
+			<div class="layer">
+				<h3>ELVİN GÜLTEKİNOĞLU</h3>
+				<p>Orta Doğu Teknik Üniversitesi Makina mühendisliği 2. sınıf öğrencisi.
+
+					Metumech ve Meturone takımlarında görev almakta.
+					
+					C++, Arduino, Python, Siemens NX alanlarında çalımalar yapmaktadır.</p>
+			</div>
+			</div>
+			<div class="campus-col">
+				<img src="images/bilge foto.jpg">
+				<div class="layer">
+					<h3>ANIL KILIÇ</h3>
+					<p>Orta Doğu Teknik Üniversitesi Makina mühendisliği 2. sınıf öğrencisi. Metu Formula Racing'de 2 yıl, ODTÜ Robot Topluluğun'da ilk yılında. C++, Arduino, Python, Görüntü işleme, Siemens NX, Solidworks, ANSYS alanlarında çalımalar yapmaktadır.
+</p>
+				</div>
+				</div>
+				<div class="campus-col">
+					<img src="images/bilge foto.jpg">
+					<div class="layer">
+						<h3>CEREN AYDIN</h3>
+						<p>Orta Doğu Teknik Üniversitesi Elektrik ve Elektronik Mühendisliği 2. Sınıf öğrencisi. ODTÜ Genç Girişimciler Topluluğunda 2 yıl, ODTÜ Robot Topluluğunda 2 yıl çalışan Mutlu finans ve pazarlama alanlarında çalışmalar yapmaktadır.</p>
+					</div>
+					</div>
 	</div>
 	
 
@@ -145,10 +249,10 @@
 
 <section class="cta">
 	<h1>Projemize Sponsor Olun,<br> biz dünyayı değiştirebiliriz.</h1>
-	<a href="" class="hero-btn">Bizimle İletişime Geçin</a>
+	<a href="contact.html" class="hero-btn">Bizimle İletişime Geçin</a>
 </section>
 <footer class="footer">	
-	<div class="container">
+	<div class="cont">
 	<div class="about-us">
 	<h2 >Hakkımızda</h2>
 	<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
@@ -163,14 +267,14 @@
 	<div class="instagram">
 		<h2>Instagram</h2>
 		<div class="flex-row">
-		<img src="inst/vosvos.jpg" alt="insta1" onClick="location.href='https://www.instagram.com/codest_team/'">
-		<img src="inst/cheese.jpg" alt="insta2" onClick="location.href='https://www.instagram.com/codest_team/'">	
-		<img src="inst/elon.jpg" alt="insta3" onClick="location.href='https://www.instagram.com/codest_team/'">
+		<img src="images/1.png" alt="insta1" onClick="location.href='https://www.instagram.com/codest_team/'">
+		<img src="images/3.png" alt="insta2" onClick="location.href='https://www.instagram.com/codest_team/'">	
+		<img src="images/5.png" alt="insta3" onClick="location.href='https://www.instagram.com/codest_team/'">
 		</div>	
 		<div class="flex-row">
-		<img src="inst/view.jpg" alt="insta4" onClick="location.href='https://www.instagram.com/codest_team/'">	
-		<img src="inst/work.jpg" alt="insta5" onClick="location.href='https://www.instagram.com/codest_team/'">		
-		<img src="inst/work1.jpg" alt="insta6" onClick="location.href='https://www.instagram.com/codest_team/'">	
+		<img src="images/9.png" alt="insta4" onClick="location.href='https://www.instagram.com/codest_team/'">	
+		<img src="images/12.png" alt="insta5" onClick="location.href='https://www.instagram.com/codest_team/'">		
+		<img src="images/14.png" alt="insta6" onClick="location.href='https://www.instagram.com/codest_team/'">	
 			</div>
 	</div>
 	<div class="follow"><h2>Bizi Takit Et</h2>
@@ -190,7 +294,7 @@
 </div>
 </div>
 
-</footer>	
+</footer> </main>	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	
 <script>
@@ -205,29 +309,14 @@
 		
 	}
 </script>
-<script type="text/javascript">
-	$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots:true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
-})
+
+<script src="js/Jquery3.4.1min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 
 
 
-</script>
+	<script src="js/main.js"></script>
+
+
 </body>
 </html>
