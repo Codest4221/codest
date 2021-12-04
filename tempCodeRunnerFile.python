@@ -1,0 +1,15 @@
+import datetime
+
+UserBirth = input("Enter the date of birth : ")
+day,month,year = UserBirth.split('-')
+isValidDate = True
+try :
+   datetime.datetime(int(day), int(month), int(year))
+    
+except ValueError :
+    isValidDate = False
+if(isValidDate) :
+    print ("The date of birth is valid .")
+else :
+    print ("The date of birth is not valid..")
+

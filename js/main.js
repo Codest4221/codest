@@ -1,10 +1,11 @@
 const responsive = {
     0: {
-        items: 1
+        items:1
     },
     320: {
         items: 1
     },
+    
     560: {
         items: 2
     },
@@ -31,7 +32,7 @@ $(document).ready(function () {
         dots: false,
         nav: true,
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
-        responsive: responsive
+        responsive:responsive
     });
 
 
