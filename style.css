@@ -280,6 +280,9 @@ nav .fa{
 	nav.active .nav{
 		display: flex;
 	}
+	.text-box h1{
+		font-size: 30px;
+	}
 
 }
 
