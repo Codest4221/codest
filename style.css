@@ -189,14 +189,14 @@ nav .fa{
 
 .menu-icon{
 	color: #fff;
-	font-size: 35px;
+	font-size: 4rem;
 	position: absolute;
-	
+	top: 50%;
 	right: 2rem;
-	transform: translateY(-0%);
-	cursor:pointer;
-	
+	transform: translateY(-50%);
+	z-index: 1500;
 	display: none;
+	cursor:pointer;
 }
 @media screen and (max-width: 800px){
 	.nav {
