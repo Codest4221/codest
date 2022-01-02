@@ -193,12 +193,12 @@ nav .fa{
 	position: absolute;
 	
 	right: 2rem;
-	transform: translateY(-50%);
+	transform: translateY(-0%);
 	cursor:pointer;
-	z-index: 1500;
+	
 	display: none;
 }
-@media(max-width: 800px){
+@media screen and (max-width: 800px){
 	.nav {
 		position: fixed;
 		top:0 ;
@@ -243,7 +243,7 @@ nav .fa{
 		
 
 	}
-	.nav li:hover > .sub-menu{
+	.nav-links ul li:hover > .sub-menu{
 		opacity: 1;
 		visibility: visible;
 		max-height: initial;
@@ -279,9 +279,6 @@ nav .fa{
 	}
 	nav.active .nav{
 		display: flex;
-	}
-	.text-box h1{
-		font-size: 30px;
 	}
 
 }

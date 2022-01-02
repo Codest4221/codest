@@ -1,6 +1,6 @@
 const selectElement = (element) => document.querySelector(element);
 
-selectElement( element= '.menu-icon'),addEventListener(type='click', listener= () =>{
+selectElement( element= '.menu-icon'),addEventListener(type='click', listener= () => {
   selectElement(element= 'nav').classList.toggle(token= 'active');
 });
 
