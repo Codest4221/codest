@@ -15,20 +15,23 @@
 		<nav>
 			<a href="index.html"><img src="images/logo-remove.png"></a>
 			<div class="nav-links" id="navLinks">
-				<i class="fa fa-times" onclick="hideMenu()" ></i>
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				
 				<ul class="nav">
 					<li><a href="index.html">ANASAYFA</a></li>
 					<li><a href="about.html">HAKKIMIZDA</a></li>
 					<li><a href="">PROJELERİMİZ</a>
-						<ul class="sub-menu">
-							<li><a href="product.html">Reader</a></li>
-							<li><a href="augmentor.html">Augmentor</a></li>
-							<li><a href="asistan.html">Sesli Asistan</a></li>
+					<ul class="sub-menu">
+						<li><a href="product.html">Reader</a></li>
+						<li><a href="augmentor.html">Augmentor</a></li>
+						<li><a href="asistan.html">Sesli Asistan</a></li>
 
 					</ul></li>
 					<li><a href="contact.html">İLETİŞİM</a></li>
 				
 			</ul>
+				
+			
 			</div>
 			<i class="fa fa-bars" onclick="showMenu()"></i>
 		</nav>
@@ -41,8 +44,7 @@
 		<h2>Sesli asistan nedir?
         </h2>
 		<p>
-			Sesli asistan, kullanıcının verdiği komutları (müzik açma, video oynatma vb.) anlayıp bu 
-komutlara bağlı belli başlı görevleri yerine getirmeye çalışan bir kişisel yardımcıdır.
+			Sesli Asistan, kullanıcının verdiği müzik açma, video oynatma gibi komutları algılayıp bu komutlara göre belli görevleri yerine getiren kişisel bir yardımcıdır.
  </p>
 		<img src="images/circle.png"></div> 
         <div class="info">
@@ -50,15 +52,7 @@ komutlara bağlı belli başlı görevleri yerine getirmeye çalışan bir kişi
                 Sesli asistanlar neler yapabilir?
             </h2>
             <p>
-                Teknolojinin gelişmesiyle birlikte bilgisayarlarımızın işlem güçleri hızlı bir oranda artmaya
-                başladı. Bilgisayarlarımız güçlendikçe de yapabildiğimiz şeylerin sayısı da ciddi oranda artmış
-                oldu. Bu artışlarla birlikte insanların aklına peki biz bilgisayarla yapılabilecek bu görevleri 
-                bir başka uygulamaya yaptırabilir miyiz sorusu gelmeye başladı. Evet yaptırabiliriz.
-                Sesli veya yazılı komutlarla çalışan bu yardımcı uygulamalara bugün asistanlar denmekte.
-                Bu asistanlar, kullanıcının verdiği komutlar sayesinde binlerce müziği oynatmaktan, 
-                internetteki bir yemek tarifini açmaya, spor haberlerinden, hava durumunu öğrenmeye kadar 
-                birçok görevi bizim yerimize çok kısa bir sürede yapabilmektedirler. Bu gçrevleri yapmaları için
-                onlara sadece seslenmeniz bile yeterli.
+				Teknolojinin gelişmesiyle  bilgisayarlarımızın işlem güçleri hızlı bir oranda artmaya başladı. Bilgisayarlarımız güçlendikçe yapabileceğimiz işlemlerin sayısı da ciddi bir oranda artmış oldu. Bu artışla beraber pek çok insanın aklına “Bilgisayarlarla yapılabilecek bu görevleri bir başka uygulamaya yaptırabilir miyiz?” sorusu gelmeye başladı. Bu sorunun cevabı ise: “Evet yaptırabiliriz.” Sesli veya yazılı komutlarla çalışan bu yardımcı uygulamalara bugün “Asistanlar” denmekte. Asistanlar, kullanıcının verdiği komutlar sayesinde binlerce farklı müziği oynatmak, internetteki herhangi bir yemek tarifini bulmak, spordan hava durumuna kadar çeşitli alanlardan son dakika haberlerini derlemek gibi birçok görevi bizim yerimize çok kısa bir sürede yapabilirler. Bu görevleri yapmaları için onlara sadece seslenmeniz yeterli!
      </p>
             </div> 
             <div class="info">
@@ -66,12 +60,7 @@ komutlara bağlı belli başlı görevleri yerine getirmeye çalışan bir kişi
                     Peki bizim sesli asistanımız neler yapabilecek?
                 </h2>
                 <p>
-                    İçerisindeki yapay zeka sayesinde, verdiğimiz komutlardan neler yapmak istediğimizi öğrenecek
-                    ve cevabını bize hızlı bir şekilde iletebilecek. En sevdiğimiz müzikleri bizim için öğrenecek 
-                    ve istediğimiz zaman bize o müzikleri kendisi oynatabilecek. İçerisinde aynı zamanda bulunacak 
-                    olan görüntü işleme ve ses tanıma algoritması sayesinde sizden başkası sizin haberiniz olmadan
-                    sesli asistanınızı kullanamıyor olacak ve tabi ki içerisindeki onlarca komut sayesinde hayatınız
-                    çok daha kolay olacak.
+					Tasarlanırken kullanılan yapay zeka sayesinde, verdiğimiz komutlardan neler yapmak istediğimizi öğrenecek ve cevabını bize hızlı bir şekilde iletebilecek. En sevdiğimiz müzikleri bizim için öğrenecek ve istediğimiz zaman bize o müzikleri oynatabilecek. Ayrıca, içerisinde bulunacak olan görüntü işleme ve ses tanıma algoritması sayesinde sizden başkası haberiniz olmadan sesli asistanınızı kullanamayacak.
                      
          </p>
                 </div> 
@@ -136,6 +125,18 @@ komutlara bağlı belli başlı görevleri yerine getirmeye çalışan bir kişi
 	</div>
 	
 	</section> 
+	<script>
+		var navLinks = document.getElementById("navLinks");
+	
+		function showMenu(){
+			navLinks.style.right = "0";
+	
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+			
+		}
+	</script>
 
 </body>
 </html>
