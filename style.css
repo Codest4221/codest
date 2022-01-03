@@ -916,8 +916,14 @@ hr{
 	.info img{
 		width: 100%;
 	}
+	.info h2{
+		font-size: 20px;
+	}
 	.docs{
 		margin: 30px 30px;
+	}
+	.docs h2{
+		font-size: 20px;
 	}
 }
 
